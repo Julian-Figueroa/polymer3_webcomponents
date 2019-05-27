@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Webcomponents</title>
@@ -7,8 +8,19 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script src="webcomponents/webcomponents-loader.js"></script>
+  <script>
+    if (!window.customElements) {
+      document.write('<!--');
+    }
+  </script>
+  <scrip src="webcomponents/custom-elements-es5-apter.js">
+  </script>
+  <!-- ! DO NOT REMOVE THIS COMMENT, WE NEED ITS CLOSING MARKER -->
 </head>
+
 <body>
   <app-root></app-root>
 </body>
+
 </html>
